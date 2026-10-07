@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEYOND — Plastic Surgery in Kosovo</title>
+<meta name="description" content="Plastic surgery in Kosovo coordinated by BEYOND. Explore procedures, packages and start with a free confidential photo assessment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#123b2a;
+  --dark:#081d15;
+  --burgundy:#741f32;
+  --red:#a51632;
+  --cream:#f4efe6;
+  --white:#fff;
+  --line:rgba(8,29,21,.12);
+  --muted:#686d67
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--dark);
+  font-family:'DM Sans',sans-serif
+}
+
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+.nav{
+  height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 5%;
+  border-bottom:1px solid var(--line);
+  background:rgba(244,239,230,.94);
+  position:sticky;
+  top:0;
+  z-index:20;
+  backdrop-filter:blur(12px)
+}
+
+.logo{
+  font-size:25px;
+  letter-spacing:4px;
+  font-weight:700
+}
+
+.nav a{
+  font-size:13px;
+  font-weight:700
+}
+
+.back{
+  border-bottom:1px solid var(--dark);
+  padding-bottom:4px
+}
+
+.container{
+  width:min(1180px,90%);
+  margin:auto
+}
+
+.hero{
+  padding:90px 0 70px;
+  display:grid;
+  grid-template-columns:1.02fr .98fr;
+  gap:55px;
+  align-items:center
+}
+
+.eyebrow{
+  font-size:11px;
+  letter-spacing:2.8px;
+  color:var(--burgundy);
+  font-weight:800;
+  text-transform:uppercase
+}
+
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-weight:500;
+  font-size:clamp(48px,7vw,88px);
+  line-height:.98;
+  margin:16px 0 22px
+}
+
+.hero p{
+  font-size:17px;
+  line-height:1.75;
+  color:var(--muted);
+  max-width:650px
+}
+
+.hero-note{
+  font-size:12px!important;
+  line-height:1.6!important;
+  margin-top:20px
+}
+
+.hero-img{
+  height:540px;
+  background:url('https://gmaclinics.com/storage/2026/02/modern-plastic-surgery.png') center/cover;
+  border-radius:2px
+}
+
+.cta-row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:30px
+}
+
+.btn{
+  padding:15px 21px;
+  font-size:13px;
+  font-weight:800
+}
+
+.btn-red{
+  background:var(--red);
+  color:#fff
+}
+
+.btn-outline{
+  border:1px solid var(--green);
+  color:var(--green)
+}
+
+.section{
+  padding:80px 0
+}
+
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+  align-items:end;
+  margin-bottom:38px
+}
+
+.section-head h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(38px,5vw,60px);
+  font-weight:500;
+  margin:8px 0 0
+}
+
+.section-head p{
+  max-width:500px;
+  color:var(--muted);
+  line-height:1.7
+}
+
+.group{
+  margin-top:65px
+}
+
+.group-head{
+  display:grid;
+  grid-template-columns:1fr 380px;
+  gap:45px;
+  align-items:end;
+  padding-bottom:25px;
+  border-bottom:1px solid var(--line)
+}
+
+.group-head h3{
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  font-weight:500;
+  margin:8px 0
+}
+
+.group-head p{
+  color:var(--muted);
+  line-height:1.7;
+  max-width:650px
+}
+
+.group-photo{
+  height:260px;
+  background-size:cover;
+  background-position:center
+}
+
+.procedures{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:0 45px
+}
+
+.procedure{
+  padding:25px 0;
+  border-bottom:1px solid var(--line);
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:15px
+}
+
+.procedure span{
+  font-size:11px;
+  letter-spacing:1.5px;
+  color:var(--red);
+  font-weight:900;
+  padding-top:5px
+}
+
+.procedure h4{
+  font-family:'Playfair Display',serif;
+  font-size:25px;
+  font-weight:500;
+  margin:0 0 7px
+}
+
+.procedure p{
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.7;
+  margin:0
+}
+
+.packages{
+  background:var(--dark);
+  color:#fff;
+  padding:90px 0
+}
+
+.packages .eyebrow{
+  color:#d58a9a
+}
+
+.packages h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(40px,6vw,68px);
+  font-weight:500;
+  margin:10px 0 15px
+}
+
+.packages-intro{
+  color:rgba(255,255,255,.68);
+  max-width:650px;
+  line-height:1.7
+}
+
+.package-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:45px
+}
+
+.package{
+  background:#f8f3ea;
+  color:var(--dark);
+  padding:34px 30px;
+  position:relative;
+  min-height:390px
+}
+
+.package.featured{
+  transform:translateY(-10px);
+  border-top:5px solid var(--red)
+}
+
+.popular{
+  position:absolute;
+  right:18px;
+  top:18px;
+  background:var(--red);
+  color:#fff;
+  padding:7px 10px;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:1.3px
+}
+
+.package-label{
+  font-size:10px;
+  letter-spacing:2px;
+  color:var(--burgundy);
+  font-weight:900
+}
+
+.package h3{
+  font-family:'Playfair Display',serif;
+  font-size:35px;
+  font-weight:500;
+  margin:9px 0 12px
+}
+
+.package p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6
+}
+
+.package ul{
+  list-style:none;
+  padding:15px 0 0;
+  margin:0
+}
+
+.package li{
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+  font-size:13px;
+  font-weight:600
+}
+
+.package li:before{
+  content:'✓';
+  color:var(--red);
+  font-weight:900;
+  margin-right:10px
+}
+
+.package .not{
+  color:#9b9d99
+}
+
+.package .not:before{
+  content:'—';
+  color:#9b9d99
+}
+
+.journey{
+  padding:90px 0
+}
+
+.journey-box{
+  background:#fff;
+  padding:55px 6%
+}
+
+.journey-box h2{
+  font-family:'Playfair Display',serif;
+  font-size:48px;
+  font-weight:500;
+  max-width:700px;
+  margin:10px 0 15px
+}
+
+.free{
+  display:inline-flex;
+  background:var(--red);
+  color:#fff;
+  padding:16px 21px;
+  font-size:15px;
+  font-weight:900;
+  margin:22px 0 30px
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px
+}
+
+.step{
+  border-top:3px solid var(--red);
+  padding-top:17px
+}
+
+.step-number{
+  font-size:11px;
+  letter-spacing:2px;
+  color:var(--red);
+  font-weight:900
+}
+
+.step h4{
+  font-size:20px;
+  margin:9px 0
+}
+
+.step p{
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.7
+}
+
+.privacy{
+  margin-top:28px;
+  padding:22px;
+  background:#f8f3ea;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.7
+}
+
+.privacy strong{
+  color:var(--red)
+}
+
+.footer{
+  padding:45px 5%;
+  background:#081d15;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  gap:30px
+}
+
+.footer small{
+  color:rgba(255,255,255,.55)
+}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-img{height:400px}
+  .group-head{grid-template-columns:1fr}
+  .procedures{grid-template-columns:1fr}
+  .package-grid{grid-template-columns:1fr}
+  .package.featured{transform:none}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .section-head{display:block}
+  .footer{display:block}
+  .footer small{
+    display:block;
+    margin-top:15px
+  }
+}
+
+@media(max-width:600px){
+  .nav{height:70px}
+  .hero{padding:65px 0 45px}
+  .hero-img{height:300px}
+  .section,.journey,.packages{padding:65px 0}
+  .steps{grid-template-columns:1fr}
+  .journey-box{padding:35px 25px}
+  .journey-box h2{font-size:38px}
+  .group-photo{height:230px}
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="logo">BEYOND</a>
+  <a href="index.html" class="back">← Back to BEYOND</a>
+</nav>
+
+<main>
+
+<section class="hero container">
+  <div>
+    <div class="eyebrow">PLASTIC SURGERY · KOSOVO</div>
+
+    <h1>Refined results.<br>Personal care.</h1>
+
+    <p>
+      Explore selected plastic surgery procedures coordinated by BEYOND for
+      international patients. Start privately from home, speak with our team,
+      and let us coordinate the practical details of your journey to Kosovo.
+    </p>
+
+    <p class="hero-note">
+      Every treatment plan is individual. Suitability, technique, recovery time
+      and final recommendations are determined by the surgeon after medical assessment.
+    </p>
+
+    <div class="cta-row">
+      <a class="btn btn-red" href="#free-assessment">
+        Start Free Photo Assessment
+      </a>
+
+      <a class="btn btn-outline" href="#packages">
+        View Packages
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-img"></div>
+</section>
+
+
+<section class="section container" id="procedures">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">PROCEDURES</div>
+      <h2>Plastic surgery,<br>organised around you.</h2>
+    </div>
+
+    <p>
+      Choose a treatment area below. Our team can help you understand the next
+      step and connect your enquiry with the appropriate clinical team.
+    </p>
+  </div>
+
+
+  <div class="group">
+
+    <div class="group-head">
+
+      <div>
+        <div class="eyebrow">01 · BREAST</div>
+
+        <h3>Breast procedures</h3>
+
+        <p>
+          Enhancement, lifting and reduction options designed around your
+          proportions, anatomy and individual goals.
+        </p>
+      </div>
+
+      <div
+        class="group-photo"
+        style="background-image:url('https://static.wixstatic.com/media/6ad324_9c07f300953546298b5b4d16ac18be20~mv2.jpg/v1/crop/x_787%2Cy_0%2Cw_2654%2Ch_2832/fill/w_613%2Ch_655%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/DSC06318.jpg')">
+      </div>
+
+    </div>
+
+    <div class="procedures">
+
+      <article class="procedure">
+        <span>01</span>
+        <div>
+          <h4>Breast Enhancement</h4>
+          <p>
+            Breast augmentation increases volume and can improve shape using
+            implants or, when suitable, fat transfer.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>02</span>
+        <div>
+          <h4>Breast Lift</h4>
+          <p>
+            A breast lift reshapes and elevates breast tissue to address sagging
+            and create a more lifted contour.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>03</span>
+        <div>
+          <h4>Breast Reduction</h4>
+          <p>
+            Selected breast tissue is removed and the breasts are reshaped to
+            create a smaller, more proportionate contour.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+
+  <div class="group">
+
+    <div class="group-head">
+
+      <div>
+        <div class="eyebrow">02 · BODY</div>
+
+        <h3>Body contouring</h3>
+
+        <p>
+          Popular procedures for reshaping areas affected by excess fat, loose
+          skin, weight change or pregnancy.
+        </p>
+      </div>
+
+      <div
+        class="group-photo"
+        style="background-image:url('https://drcarmen.com.au/wp-content/uploads/2025/07/abdominoplasty-tummy-tuck-Before-and-after-Melbourne-15.jpg')">
+      </div>
+
+    </div>
+
+    <div class="procedures">
+
+      <article class="procedure">
+        <span>01</span>
+        <div>
+          <h4>Abdominoplasty + Liposuction</h4>
+          <p>
+            A tummy tuck removes selected excess abdominal skin and may tighten
+            the abdominal wall; liposuction can refine surrounding contours.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>02</span>
+        <div>
+          <h4>Liposuction</h4>
+          <p>
+            Localized fat deposits can be removed from areas such as the
+            abdomen, waist, thighs, arms, back or chin to refine contours.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>03</span>
+        <div>
+          <h4>Thigh Lift</h4>
+          <p>
+            A thigh lift removes selected excess skin and reshapes the thigh
+            area when skin laxity is the main concern.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>04</span>
+        <div>
+          <h4>Arm Lift</h4>
+          <p>
+            An arm lift reshapes the upper arm by removing selected excess skin
+            and, where appropriate, combining it with contouring.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>05</span>
+        <div>
+          <h4>Mommy Makeover</h4>
+          <p>
+            A personalised combination of procedures, often involving the
+            breasts and abdomen, designed around changes following pregnancy
+            and weight fluctuations.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>06</span>
+        <div>
+          <h4>Lipofilling</h4>
+          <p>
+            Fat is collected from another area, processed and transferred to
+            add volume or improve contour in selected areas such as the breasts,
+            face or body.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+
+  <div class="group">
+
+    <div class="group-head">
+
+      <div>
+        <div class="eyebrow">03 · FACE</div>
+
+        <h3>Face &amp; profile</h3>
+
+        <p>
+          Refine, refresh or rebalance facial features with a treatment plan
+          tailored to your anatomy and goals.
+        </p>
+      </div>
+
+      <div
+        class="group-photo"
+        style="background-image:url('https://300experts.ru/upload/img/2025/06/30/v-processe-raboty-5.jpg')">
+      </div>
+
+    </div>
+
+    <div class="procedures">
+
+      <article class="procedure">
+        <span>01</span>
+        <div>
+          <h4>Face Lift</h4>
+          <p>
+            A facelift repositions and tightens selected facial tissues and
+            removes excess skin to improve facial contour and visible signs
+            of ageing.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>02</span>
+        <div>
+          <h4>Rhinoplasty</h4>
+          <p>
+            Rhinoplasty reshapes the nose to improve proportion and, when
+            needed, address functional concerns. The plan is highly individual.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>03</span>
+        <div>
+          <h4>Blepharoplasty</h4>
+          <p>
+            Eyelid surgery removes or repositions selected excess skin and
+            tissue around the upper and/or lower eyelids for a more refreshed
+            appearance.
+          </p>
+        </div>
+      </article>
+
+      <article class="procedure">
+        <span>04</span>
+        <div>
+          <h4>Neck Lift</h4>
+          <p>
+            A neck lift addresses loose skin and selected neck tissues to create
+            a cleaner transition between the jawline and neck.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+</section>
+
+
+<section class="packages" id="packages">
+
+  <div class="container">
+
+    <div class="eyebrow">BEYOND PACKAGES</div>
+
+    <h2>Choose how much<br>we handle for you.</h2>
+
+    <p class="packages-intro">
+      Our packages are designed to make the practical side of medical travel
+      easier to understand. The exact inclusions are confirmed with your
+      treatment plan before travel.
+    </p>
+
+    <div class="package-grid">
+
+      <article class="package">
+
+        <div class="package-label">BEYOND 01</div>
+
+        <h3>Basic</h3>
+
+        <p>
+          Essential coordination for patients who want the core logistics covered.
+        </p>
+
+        <ul>
+          <li>All hospital fees*</li>
+          <li>Airport transfer</li>
+          <li class="not">Premium accommodation</li>
+          <li class="not">Return flight</li>
+        </ul>
+
+      </article>
+
+
+      <article class="package featured">
+
+        <div class="popular">MOST POPULAR</div>
+
+        <div class="package-label">BEYOND 02</div>
+
+        <h3>Premium</h3>
+
+        <p>
+          A more comfortable experience with premium accommodation arranged
+          for you.
+        </p>
+
+        <ul>
+          <li>All hospital fees*</li>
+          <li>Airport transfer</li>
+          <li>Guaranteed stay at premium location*</li>
+          <li class="not">Return flight</li>
+        </ul>
+
+      </article>
+
+
+      <article class="package">
+
+        <div class="package-label">BEYOND 03</div>
+
+        <h3>Gold</h3>
+
+        <p>
+          The most complete package for patients who want more of the journey
+          handled by BEYOND.
+        </p>
+
+        <ul>
+          <li>All hospital fees*</li>
+          <li>Airport transfer</li>
+          <li>Return airplane ticket*</li>
+          <li>Guaranteed stay at premium location*</li>
+        </ul>
+
+      </article>
+
+    </div>
+
+    <p style="font-size:11px;color:rgba(255,255,255,.48);margin-top:24px;line-height:1.6">
+      *Package inclusions, eligibility, accommodation and flight arrangements
+      are confirmed in writing before booking. Medical suitability, additional
+      tests, medication and services outside the agreed package may be separate.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="journey container" id="free-assessment">
+
+  <div class="journey-box">
+
+    <div class="eyebrow">START FROM HOME · FREE</div>
+
+    <h2>
+      Send a photo.<br>
+      Meet our team.<br>
+      Come to Kosovo.
+    </h2>
+
+    <p style="color:var(--muted);max-width:700px;line-height:1.7">
+      Your first contact with BEYOND and your photo assessment are completely
+      free. You can start from home without committing to a treatment.
+    </p>
+
+    <div class="free">
+      ✓ FREE PHOTO ASSESSMENT · FREE FIRST CONTACT
+    </div>
+
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01 · SEND</div>
+        <h4>Share your photos</h4>
+        <p>
+          Send clear photos through WhatsApp or email and tell us which
+          procedure you are considering.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02 · CONNECT</div>
+        <h4>Get in touch</h4>
+        <p>
+          Our team reviews your enquiry and helps arrange a consultation and
+          the information you need before travelling.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03 · ARRIVE</div>
+        <h4>Come to Kosovo</h4>
+        <p>
+          We coordinate your appointments, airport transfer options and
+          accommodation around your treatment plan.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04 · CARE</div>
+        <h4>Meet your surgeons</h4>
+        <p>
+          Meet the medical team, complete your assessment and proceed according
+          to the surgeon's recommendation and safety requirements.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="privacy">
+
+      <strong>
+        Your photos are confidential — and sending them is free.
+      </strong>
+
+      <br>
+
+      Images you send are treated as private information and used for your
+      enquiry, treatment planning and coordination with the relevant clinical team.
+
+      <div class="cta-row">
+
+        <a
+          class="btn btn-red"
+          href="https://wa.me/383XXXXXXXXX"
+          target="_blank">
+          Send via WhatsApp — Free
+        </a>
+
+        <a
+          class="btn btn-outline"
+          href="mailto:info@beyondkosovo.com">
+          Send by Email — Free
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <p style="margin-top:30px;color:var(--muted);font-size:13px;line-height:1.7">
+      For many selected procedures, the journey may be planned around
+      approximately 4–7 days in Kosovo, depending on the procedure, medical
+      assessment and individual recovery needs.
+    </p>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div>
+    <strong style="letter-spacing:4px">BEYOND</strong>
+  </div>
+
+  <small>
+    Healthcare without borders · Prishtina, Kosovo
+  </small>
+
+</footer>
+
+</body>
+</html>

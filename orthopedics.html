@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orthopedics | BEYOND</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--deep:#251015;--wine:#481920;--red:#b7353d;--coral:#dc4c43;--ivory:#f7f1eb;--ink:#1b1716;--grey:#706968;--line:#e5d9d2}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--ivory);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1080px,90%);margin:auto}
+    nav{position:absolute;z-index:5;top:0;left:0;width:100%;padding:23px 5%;display:flex;justify-content:space-between;align-items:center;color:#fff}
+    .logo{font-size:22px;font-weight:700;letter-spacing:5px}
+    .back{font-size:10px;letter-spacing:1.3px;text-transform:uppercase}
+    .hero{position:relative;min-height:620px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(115deg,var(--deep),var(--wine) 70%,#68272d);color:white}
+    .hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(37,16,21,.99) 0%,rgba(37,16,21,.93) 37%,rgba(37,16,21,.47) 66%,rgba(37,16,21,.1) 100%)}
+    .hero-photo{position:absolute;right:0;top:0;width:62%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse at 68% 50%,#e9dcd1 0%,#b4bdc0 23%,#732b32 62%,transparent 76%)}
+    .hero-photo img{width:100%;height:100%;object-fit:contain;object-position:center;opacity:.93;filter:contrast(1.06) saturate(.8);mix-blend-mode:lighten;-webkit-mask-image:radial-gradient(ellipse at 65% 50%,#000 34%,rgba(0,0,0,.88) 52%,transparent 78%);mask-image:radial-gradient(ellipse at 65% 50%,#000 34%,rgba(0,0,0,.88) 52%,transparent 78%)}
+    .hero-content{position:relative;z-index:2;width:min(650px,68%);padding:130px 0 100px}
+    .badge{display:inline-block;padding:8px 12px;border:1px solid #f2b0a877;background:#b7353d55;color:#ffd7d0;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+    .eyebrow{margin:24px 0 13px;color:#f2aaa3;font-size:10px;font-weight:700;letter-spacing:2.6px;text-transform:uppercase}
+    h1{font:500 clamp(54px,7.7vw,84px)/.98 "Playfair Display",serif;letter-spacing:-2px}
+    .hero-copy{max-width:480px;margin-top:19px;color:#f0e4e1;font-size:15px}
+    .button{display:inline-block;margin-top:23px;padding:15px 21px;background:var(--coral);color:#fff;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;box-shadow:0 8px 22px #0f080833}
+    .button:hover{background:#ef5b50}
+    .followup{margin-top:9px;color:#f4cfca;font-size:11px}
+    .photo-credit{position:absolute;z-index:2;right:14px;bottom:10px;color:#fff;font-size:9px;text-shadow:0 1px 5px #000}
+    .photo-credit a{text-decoration:underline}
+    .services{padding:68px 0 74px;background:#fff}
+    .label{margin-bottom:11px;color:var(--red);font-size:10px;font-weight:700;letter-spacing:2.2px;text-transform:uppercase}
+    h2{font:500 clamp(36px,5vw,54px)/1.05 "Playfair Display",serif}
+    .section-intro{margin-top:9px;color:var(--grey);font-size:14px}
+    .cards{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:28px}
+    .card{min-height:160px;padding:24px;background:linear-gradient(135deg,#fff 0%,#fff7f4 100%);border:1px solid #eddad6;border-bottom:4px solid var(--red)}
+    .number{display:grid;width:35px;height:35px;place-items:center;border-radius:50%;background:#f5deda;color:var(--red);font-size:11px;font-weight:700}
+    .card h3{margin-top:15px;font:500 27px/1.15 "Playfair Display",serif}
+    .card p{margin-top:6px;color:var(--grey);font-size:12px}
+    .training{padding:42px 0;background:#f0dfdc}
+    .training-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
+    .training h2{max-width:350px;font-size:34px}
+    .training-copy{max-width:520px;color:#554d4c;font-size:14px}
+    .places{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+    .places span{padding:6px 10px;background:#fff;color:var(--red);font-size:10px;font-weight:700}
+    footer{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:24px 5%;background:#1b0c10;color:#fff}
+    .footer-logo{font-size:18px;font-weight:700;letter-spacing:4px}
+    .footer-copy{font-size:10px;color:#c5aaaa}
+    @media(max-width:700px){.hero{min-height:650px}.hero:before{background:linear-gradient(90deg,rgba(37,16,21,.97),rgba(37,16,21,.7)),linear-gradient(0deg,var(--deep),transparent 55%)}.hero-photo{width:100%;opacity:.56}.hero-content{width:100%;padding:135px 0 90px}.cards{grid-template-columns:1fr}.training-inner{display:block}.training-copy{margin-top:16px}.services{padding:58px 0}.training{padding:36px 0}}
+    @media(max-width:440px){nav{padding:20px 5%}.logo{font-size:19px}.back{font-size:9px}.hero h1{font-size:52px}.hero-copy{font-size:14px}footer{display:block}.footer-copy{margin-top:7px}}
+  </style>
+</head>
+<body>
+  <nav><a class="logo" href="index.html">BEYOND</a><a class="back" href="index.html">Back to BEYOND</a></nav>
+  <header class="hero">
+    <div class="hero-photo" aria-hidden="true"><img src="https://www.researchgate.net/figure/publication/228502179/figure/fig3/AS%3A301955315453954%401449003165353/A-total-knee-replacement-prosthesis.png" alt=""></div>
+    <div class="container hero-content">
+      <span class="badge">Coming Soon</span>
+      <div class="eyebrow">BEYOND ORTHOPEDICS</div>
+      <h1>Stronger steps,<br>coming soon.</h1>
+      <p class="hero-copy">We’re preparing our knee and hip prosthesis service, with support to help you understand the next steps.</p>
+      <a class="button" href="mailto:hello@beyondhealthcare.com?subject=Orthopedics%20interest">Register your interest</a>
+      <p class="followup">Register your interest and we’ll contact you shortly.</p>
+    </div>
+    <div class="photo-credit">Photo: <a href="https://www.researchgate.net/figure/A-total-knee-replacement-prosthesis_fig3_228502179" target="_blank" rel="noopener">Pokorn &amp; Křen / ResearchGate</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></div>
+  </header>
+  <main>
+    <section class="services"><div class="container">
+      <div class="label">Planned services</div>
+      <h2>Orthopedic care options.</h2>
+      <p class="section-intro">Two specialist services are in development.</p>
+      <div class="cards">
+        <article class="card"><span class="number">01</span><h3>Knee prosthesis</h3><p>Support to explore knee prosthesis care with an orthopedic specialist.</p></article>
+        <article class="card"><span class="number">02</span><h3>Hip prosthesis</h3><p>Support to explore hip prosthesis care with an orthopedic specialist.</p></article>
+      </div>
+    </div></section>
+    <section class="training"><div class="container training-inner">
+      <div><div class="label">Training and experience</div><h2>Expertise across Europe.</h2></div>
+      <div class="training-copy">Our orthopedic experts have completed professional training in:
+        <div class="places"><span>Bucharest</span><span>Zagreb</span><span>Athens</span><span>London</span><span>Spain</span></div>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="footer-logo">BEYOND</div><div class="footer-copy">Thoughtful coordination. Care shaped around you.</div></footer>
+</body>
+</html>

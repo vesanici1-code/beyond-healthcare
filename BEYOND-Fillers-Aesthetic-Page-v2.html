@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEYOND — Aesthetic Medicine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#173c32;
+  --burgundy:#7d2535;
+  --ivory:#f7f4ee;
+  --ink:#171715;
+  --muted:#706d67;
+  --line:#ded9d0;
+  --white:#fff;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  background:var(--ivory);
+  color:var(--ink);
+  font-family:"DM Sans",sans-serif
+}
+
+a{
+  text-decoration:none;
+  color:inherit
+}
+
+.nav{
+  height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 6vw;
+  background:rgba(247,244,238,.97);
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:20
+}
+
+.logo{
+  font-weight:700;
+  letter-spacing:.18em;
+  font-size:20px;
+  color:var(--green)
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+  font-size:13px
+}
+
+.nav-links a:hover{
+  color:var(--burgundy)
+}
+
+.hero{
+  min-height:68vh;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  align-items:center;
+  gap:6vw;
+  padding:80px 8vw;
+  background:var(--green);
+  color:#fff
+}
+
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  font-size:11px;
+  opacity:.72;
+  margin-bottom:20px
+}
+
+.hero h1{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(48px,6vw,84px);
+  line-height:.98;
+  font-weight:500;
+  margin:0 0 24px
+}
+
+.hero p{
+  max-width:590px;
+  font-size:17px;
+  line-height:1.8;
+  opacity:.84
+}
+
+.hero-img{
+  height:520px;
+  border-radius:2px;
+  overflow:hidden
+}
+
+.hero-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+
+.section{
+  padding:90px 8vw
+}
+
+.section-head{
+  max-width:760px;
+  margin-bottom:50px
+}
+
+.section-head h2{
+  font-family:"Playfair Display",serif;
+  font-weight:500;
+  font-size:48px;
+  line-height:1.08;
+  margin:0 0 16px
+}
+
+.section-head p{
+  color:var(--muted);
+  line-height:1.8;
+  font-size:16px
+}
+
+.trust-strip{
+  background:#fff;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:48px 8vw
+}
+
+.trust-grid{
+  display:grid;
+  grid-template-columns:1.15fr 1fr 1fr 1fr;
+  gap:24px;
+  align-items:start
+}
+
+.trust-intro h3{
+  font-family:"Playfair Display",serif;
+  font-size:30px;
+  font-weight:500;
+  margin:0 0 10px
+}
+
+.trust-intro p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.7;
+  margin:0
+}
+
+.city{
+  border-left:1px solid var(--line);
+  padding-left:22px
+}
+
+.city strong{
+  display:block;
+  color:var(--green);
+  font-size:15px;
+  margin-bottom:5px
+}
+
+.city span{
+  font-size:12px;
+  line-height:1.6;
+  color:var(--muted)
+}
+
+.selling{
+  background:var(--green);
+  color:#fff
+}
+
+.selling .section-head p{
+  color:rgba(255,255,255,.72)
+}
+
+.selling-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px
+}
+
+.selling-item{
+  padding:28px;
+  border:1px solid rgba(255,255,255,.16)
+}
+
+.selling-item h3{
+  font-family:"Playfair Display",serif;
+  font-weight:500;
+  font-size:26px;
+  margin:0 0 10px
+}
+
+.selling-item p{
+  font-size:13px;
+  line-height:1.7;
+  color:rgba(255,255,255,.72);
+  margin:0
+}
+
+.card-link{
+  display:inline-block;
+  margin-top:18px;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--burgundy);
+  font-weight:700
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px
+}
+
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  overflow:hidden;
+  transition:transform .2s ease,box-shadow .2s ease
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 30px rgba(23,60,50,.08)
+}
+
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  display:block
+}
+
+.card-body{
+  padding:27px 28px 30px
+}
+
+.tag{
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--burgundy);
+  font-weight:700
+}
+
+.card h3{
+  font-family:"Playfair Display",serif;
+  font-size:29px;
+  font-weight:500;
+  line-height:1.05;
+  margin:12px 0
+}
+
+.card p{
+  font-size:14px;
+  line-height:1.75;
+  color:var(--muted);
+  margin:0
+}
+
+.info{
+  background:#fff
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px
+}
+
+.step{
+  border-top:2px solid var(--burgundy);
+  padding-top:18px
+}
+
+.num{
+  font-size:12px;
+  color:var(--burgundy);
+  font-weight:700
+}
+
+.step h4{
+  font-family:"Playfair Display",serif;
+  font-size:23px;
+  margin:12px 0 8px
+}
+
+.step p{
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.65
+}
+
+.note{
+  margin-top:36px;
+  padding:22px 24px;
+  border:1px solid var(--line);
+  background:var(--ivory);
+  font-size:12px;
+  line-height:1.7;
+  color:var(--muted)
+}
+
+.city-escape{
+  margin:0 8vw 80px;
+  min-height:520px;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  background:#111;
+  color:#fff;
+  overflow:hidden
+}
+
+.city-escape-image{
+  min-height:520px;
+  overflow:hidden
+}
+
+.city-escape-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:saturate(.82)
+}
+
+.city-escape-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:70px 7vw 70px 5vw;
+  background:var(--green)
+}
+
+.city-escape-copy h2{
+  font-family:"Playfair Display",serif;
+  font-weight:500;
+  font-size:52px;
+  line-height:1.02;
+  margin:0 0 22px
+}
+
+.city-escape-copy p{
+  max-width:440px;
+  line-height:1.8;
+  font-size:15px;
+  color:rgba(255,255,255,.76);
+  margin:0
+}
+
+.city-escape-line{
+  margin-top:30px;
+  padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.18);
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.72)
+}
+
+.cta{
+  margin:0 8vw 80px;
+  padding:70px 8vw;
+  background:var(--burgundy);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px
+}
+
+.cta h2{
+  font-family:"Playfair Display",serif;
+  font-weight:500;
+  font-size:44px;
+  margin:0 0 12px
+}
+
+.cta p{
+  opacity:.82;
+  max-width:620px;
+  line-height:1.7
+}
+
+.button{
+  display:inline-block;
+  background:#fff;
+  color:var(--burgundy);
+  padding:15px 25px;
+  font-size:13px;
+  font-weight:700;
+  white-space:nowrap
+}
+
+footer{
+  padding:40px 8vw;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  color:var(--muted);
+  font-size:12px
+}
+
+@media(max-width:900px){
+
+  .city-escape{
+    margin:0 7vw 60px;
+    grid-template-columns:1fr
+  }
+
+  .city-escape-image{
+    min-height:360px
+  }
+
+  .city-escape-copy{
+    padding:55px 7vw 60px
+  }
+
+  .city-escape-copy h2{
+    font-size:44px
+  }
+
+  .trust-grid{
+    grid-template-columns:1fr 1fr
+  }
+
+  .selling-grid{
+    grid-template-columns:1fr
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    padding:60px 7vw
+  }
+
+  .hero-img{
+    height:360px
+  }
+
+  .cards{
+    grid-template-columns:1fr 1fr
+  }
+
+  .steps{
+    grid-template-columns:1fr 1fr
+  }
+
+  .nav{
+    padding:0 7vw
+  }
+
+  .nav-links{
+    gap:14px
+  }
+
+  .section{
+    padding:65px 7vw
+  }
+}
+
+@media(max-width:600px){
+
+  .cards,
+  .steps{
+    grid-template-columns:1fr
+  }
+
+  .nav-links{
+    display:none
+  }
+
+  .city-escape{
+    margin:0 7vw 50px
+  }
+
+  .city-escape-image{
+    min-height:300px
+  }
+
+  .cta{
+    margin:0 7vw 50px;
+    padding:45px 7vw;
+    display:block
+  }
+
+  .button{
+    margin-top:20px
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <a class="logo" href="#top">BEYOND</a>
+
+  <div class="nav-links">
+    <a href="#treatments">Treatments</a>
+    <a href="#journey">How it works</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<section class="hero" id="top">
+
+  <div>
+
+    <div class="eyebrow">
+      Aesthetic Medicine · Kosovo
+    </div>
+
+    <h1>
+      Subtle.<br>
+      Refined.<br>
+      Personal.
+    </h1>
+
+    <p>
+      BEYOND connects international patients with carefully selected medical
+      professionals in Kosovo for personalized aesthetic treatments, with
+      coordination from your first assessment to your return home.
+    </p>
+
+  </div>
+
+  <div class="hero-img">
+
+    <img
+      src="https://300experts.ru/upload/img/2024/04/04/1-1_13999999999999998-1030.jpg"
+      alt="Facial filler treatment performed by a medical professional"
+    >
+
+  </div>
+
+</section>
+
+
+<section class="trust-strip">
+
+  <div class="trust-grid">
+
+    <div class="trust-intro">
+
+      <div class="eyebrow">
+        International standards
+      </div>
+
+      <h3>
+        European expertise. Kosovo access.
+      </h3>
+
+      <p>
+        BEYOND prioritizes qualified specialists whose professional development
+        includes advanced aesthetic education and continuing training in leading
+        European centres.
+      </p>
+
+    </div>
+
+
+    <div class="city">
+
+      <strong>Milano</strong>
+
+      <span>
+        One of Europe’s established hubs for aesthetic medicine and advanced
+        facial aesthetics.
+      </span>
+
+    </div>
+
+
+    <div class="city">
+
+      <strong>Paris</strong>
+
+      <span>
+        International centre for advanced injectable, regenerative and aesthetic
+        medicine training.
+      </span>
+
+    </div>
+
+
+    <div class="city">
+
+      <strong>Rome</strong>
+
+      <span>
+        Home to major European aesthetic medicine congresses and hands-on
+        specialist education.
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section" id="treatments">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      Selected treatments
+    </div>
+
+    <h2>
+      Aesthetic medicine, coordinated by BEYOND.
+    </h2>
+
+    <p>
+      From subtle facial refinement to skin treatments and non-surgical body
+      contouring, each service begins with an individual assessment and is
+      performed by a qualified medical professional selected through our network.
+    </p>
+
+  </div>
+
+
+  <div class="cards">
+
+
+    <article class="card">
+
+      <img
+        src="https://images.pexels.com/photos/27666913/pexels-photo-27666913.jpeg?auto=compress&cs=tinysrgb&w=1400"
+        alt="Lip filler injection"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Injectables
+        </div>
+
+        <h3>
+          Lip Fillers
+        </h3>
+
+        <p>
+          Personalized lip enhancement focused on proportion, definition,
+          symmetry and natural-looking volume.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img
+        src="https://cdn.whatclinic.com/beauty-clinics/uk/london/southwark/natural-enhancement-clinic/thumbnails/b9c60195c0be2515/cheek_filler.jpg?float-y=0.25&hmac=af6d1b8559abffc84ab8600b40ad6b38b4b2e528"
+        alt="Cheek filler injection"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Injectables
+        </div>
+
+        <h3>
+          Cheek Fillers
+        </h3>
+
+        <p>
+          Subtle cheek enhancement designed to restore volume, define the
+          cheekbones and support overall facial harmony.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img
+        src="https://kanvasmedicalgroup.com/_next/image?q=75&url=https%3A%2F%2Ffacesconsent.com%2Fresources%2Fclinic-images%2Fgeneral%2Fkanvascontouring.png&w=1920"
+        alt="Chin and jawline filler treatment"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Facial Contouring
+        </div>
+
+        <h3>
+          Chin &amp; Jawline
+        </h3>
+
+        <p>
+          Non-surgical contouring to enhance chin projection, jawline definition
+          and facial proportions.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img
+        src="https://movmoreireland.com/cdn/shop/files/IMG_1365_2.jpg?v=1709153117&width=416"
+        alt="Nasolabial fold filler injection"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Injectables
+        </div>
+
+        <h3>
+          Nasolabial Folds
+        </h3>
+
+        <p>
+          Individualized treatment to soften the appearance of smile lines and
+          restore balance to the mid-face.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img
+        src="https://lirp.cdn-website.com/dbed3f3b/dms3rep/multi/opt/filler%2Bocchi-1920w.jpg"
+        alt="Tear trough filler treatment under the eye"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Under-Eye
+        </div>
+
+        <h3>
+          Tear Trough
+        </h3>
+
+        <p>
+          Carefully assessed under-eye filler treatment for selected patients
+          with visible hollows and tired-looking contours.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img
+        src="https://savvyderm.com/cdn/shop/files/facial-balancing-in-millville-de-2048x1476.jpg?v=1699951227&width=2048"
+        alt="Facial balancing treatment"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Facial Harmony
+        </div>
+
+        <h3>
+          Facial Balancing
+        </h3>
+
+        <p>
+          A personalized combination of treatments designed to improve
+          proportion and harmony across the face.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/69a31bd1627e763815d1c204/dffe8587-2730-413e-9070-55c62ed34d56/Skin%2Bboosters%2Bpicture.jpg"
+        alt="Skin booster facial treatment"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Skin Quality
+        </div>
+
+        <h3>
+          Skin Boosters
+        </h3>
+
+        <p>
+          Injectable skin-quality treatments focused on hydration, texture and
+          a fresher, more luminous appearance.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img
+        src="https://renaissanceaesthetics.ie/wp-content/uploads/2025/05/Antiwrinkle2.png"
+        alt="Botox injection for forehead wrinkles"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Anti-Wrinkle
+        </div>
+
+        <h3>
+          Botox &amp; Wrinkle Treatment
+        </h3>
+
+        <p>
+          Targeted wrinkle treatments for selected facial areas, with an
+          approach focused on balanced, natural-looking results.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img
+        src="https://static.wixstatic.com/media/ce7845_186af3a3bbb14d83ac2795e54deffe6d~mv2.png/v1/fill/w_640%2Ch_424%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/ce7845_186af3a3bbb14d83ac2795e54deffe6d~mv2.png"
+        alt="Professional laser facial treatment"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Laser &amp; Skin
+        </div>
+
+        <h3>
+          Laser Treatments
+        </h3>
+
+        <p>
+          Selected laser treatments for skin rejuvenation, pigmentation,
+          texture and other aesthetic skin concerns.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img
+        src="https://cevrehastanesi.com.tr/upload/galeri/woman_for_hip_dip_correction_in_turkey_with_fillers_20241108095451.jpg"
+        alt="Hip dips filler injection body contouring"
+      >
+
+      <div class="card-body">
+
+        <div class="tag">
+          Body Contouring
+        </div>
+
+        <h3>
+          Hip Dips Fillers
+        </h3>
+
+        <p>
+          Non-surgical contouring designed to soften the appearance of hip dips
+          and create a smoother, more balanced silhouette.
+        </p>
+
+        <a class="card-link" href="#contact">
+          Request assessment →
+        </a>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+
+  <div class="note">
+
+    <strong>
+      Every treatment starts with medical assessment.
+    </strong>
+
+    Suitability, technique, product selection and treatment areas are determined
+    by the qualified medical professional after consultation. Not every treatment
+    is suitable for every patient.
+
+  </div>
+
+</section>
+
+
+<section class="section selling">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      Why patients choose BEYOND
+    </div>
+
+    <h2>
+      Aesthetic care, thoughtfully coordinated.
+    </h2>
+
+    <p>
+      You do not have to organize the specialist, treatment, travel and
+      aftercare alone. BEYOND brings the experience together in one coordinated journey.
+    </p>
+
+  </div>
+
+
+  <div class="selling-grid">
+
+    <div class="selling-item">
+
+      <h3>
+        Personal assessment
+      </h3>
+
+      <p>
+        We start with your goals, photos and medical history — then help you
+        understand which options may be worth considering.
+      </p>
+
+    </div>
+
+
+    <div class="selling-item">
+
+      <h3>
+        Selected specialists
+      </h3>
+
+      <p>
+        We connect you with qualified professionals selected around experience,
+        treatment focus and your individual needs.
+      </p>
+
+    </div>
+
+
+    <div class="selling-item">
+
+      <h3>
+        One point of contact
+      </h3>
+
+      <p>
+        From your first message to your appointment and travel coordination,
+        BEYOND gives you one clear point of contact.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section info" id="journey">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      Your journey
+    </div>
+
+    <h2>
+      Simple from the first message.
+    </h2>
+
+    <p>
+      Start with a free and confidential photo assessment. We coordinate the
+      next steps around your treatment and travel.
+    </p>
+
+  </div>
+
+
+  <div class="steps">
+
+    <div class="step">
+
+      <div class="num">
+        01
+      </div>
+
+      <h4>
+        Send photos
+      </h4>
+
+      <p>
+        Share your photos for a free, confidential initial assessment.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="num">
+        02
+      </div>
+
+      <h4>
+        Get in touch
+      </h4>
+
+      <p>
+        We discuss your goals, suitable options, timing and practical details.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="num">
+        03
+      </div>
+
+      <h4>
+        Come to Kosovo
+      </h4>
+
+      <p>
+        BEYOND coordinates your treatment journey and arrival.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="num">
+        04
+      </div>
+
+      <h4>
+        Meet your specialist
+      </h4>
+
+      <p>
+        Your final treatment plan is confirmed directly with the qualified
+        medical professional.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="city-escape">
+
+  <div class="city-escape-image">
+
+    <img
+      src="https://images.pexels.com/photos/31948771/pexels-photo-31948771.jpeg?cs=srgb&dl=pexels-denis-sllovinja-260504482-31948771.jpg&fm=jpg"
+      alt="Prishtina at night"
+    >
+
+  </div>
+
+
+  <div class="city-escape-copy">
+
+    <div class="eyebrow">
+      Beyond the appointment
+    </div>
+
+    <h2>
+      Prishtina, after dark.
+    </h2>
+
+    <p>
+      Your aesthetic journey can be more than an appointment.
+      Discover Prishtina, settle into the city and make your time in Kosovo
+      feel considered from beginning to end.
+    </p>
+
+    <div class="city-escape-line">
+      A different destination. A more personal experience.
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="cta" id="contact">
+
+  <div>
+
+    <h2>
+      Start with a private assessment.
+    </h2>
+
+    <p>
+      Send your photos and tell us what you would like to improve.
+      The assessment is free and confidential.
+    </p>
+
+  </div>
+
+  <a
+    class="button"
+    href="https://wa.me/383XXXXXXXXX">
+    Contact BEYOND
+  </a>
+
+</section>
+
+
+<footer>
+
+  <div>
+    © BEYOND — Healthcare Without Borders
+  </div>
+
+  <div>
+    info@beyondkosovo.com
+  </div>
+
+</footer>
+
+</body>
+</html>
