@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
 :root{
     --green:#123b2a;
@@ -17,31 +18,38 @@
     --orange:#d94a2b;
     --white:#ffffff;
 }
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+
 html{
     scroll-behavior:smooth;
 }
+
 body{
     font-family:"DM Sans",sans-serif;
     background:var(--ivory);
     color:var(--black);
 }
+
 img{
     width:100%;
     display:block;
     object-fit:cover;
 }
+
 a{
     color:inherit;
     text-decoration:none;
 }
+
 /* =========================================================
    NAVIGATION
 ========================================================= */
+
 nav{
     position:absolute;
     top:0;
@@ -55,6 +63,7 @@ nav{
     padding:28px 4vw;
     color:white;
 }
+
 .nav-logo{
     flex:0 0 auto;
     white-space:nowrap;
@@ -62,6 +71,7 @@ nav{
     font-weight:700;
     letter-spacing:7px;
 }
+
 .nav-links{
     display:flex;
     flex:1 1 auto;
@@ -73,26 +83,32 @@ nav{
     text-transform:uppercase;
     letter-spacing:1px;
 }
+
 .nav-links a{
     flex:0 0 auto;
     white-space:nowrap;
     transition:.25s ease;
 }
+
 .nav-links a:hover{
     opacity:.65;
 }
+
 .nav-cta{
     border:1px solid rgba(255,255,255,.8);
     padding:12px 18px;
 }
+
 .nav-cta:hover{
     background:white;
     color:var(--green);
     opacity:1 !important;
 }
+
 /* =========================================================
    HERO
 ========================================================= */
+
 .hero{
     min-height:100vh;
     background:
@@ -114,6 +130,7 @@ nav{
     position:relative;
     overflow:hidden;
 }
+
 .hero::before{
     content:"BEYOND";
     position:absolute;
@@ -131,6 +148,7 @@ nav{
     pointer-events:none;
     white-space:nowrap;
 }
+
 .hero::after{
     content:"BEYOND";
     position:absolute;
@@ -142,11 +160,13 @@ nav{
     color:rgba(255,255,255,.035);
     pointer-events:none;
 }
+
 .hero-content{
     width:min(900px,100%);
     position:relative;
     z-index:2;
 }
+
 .hero-logo{
     font-size:clamp(75px,14vw,190px);
     line-height:.75;
@@ -157,12 +177,14 @@ nav{
     text-shadow:
         0 4px 25px rgba(0,0,0,.25);
 }
+
 .hero-line{
     width:90px;
     height:4px;
     background:var(--orange);
     margin-bottom:30px;
 }
+
 .hero h1{
     font-size:clamp(35px,5vw,70px);
     line-height:.98;
@@ -170,6 +192,7 @@ nav{
     letter-spacing:-2px;
     margin-bottom:25px;
 }
+
 .hero p{
     max-width:620px;
     font-size:18px;
@@ -177,6 +200,7 @@ nav{
     color:#e9e7e1;
     margin-bottom:38px;
 }
+
 .primary-button{
     display:inline-block;
     background:var(--orange);
@@ -188,23 +212,28 @@ nav{
     font-size:13px;
     transition:.25s;
 }
+
 .primary-button:hover{
     transform:translateY(-3px);
     background:#ed6045;
 }
+
 /* =========================================================
    INTRO
 ========================================================= */
+
 .intro{
     padding:130px 5vw;
     background:var(--ivory);
 }
+
 .intro-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:80px;
     align-items:end;
 }
+
 .eyebrow{
     font-size:12px;
     letter-spacing:3px;
@@ -212,84 +241,102 @@ nav{
     font-weight:700;
     margin-bottom:25px;
 }
+
 .intro h2{
     font-family:"Playfair Display",serif;
     font-size:clamp(45px,6vw,85px);
     line-height:.98;
     font-weight:500;
 }
+
 .intro-copy{
     font-size:19px;
     line-height:1.7;
     max-width:570px;
 }
+
 /* =========================================================
    WHY BEYOND
 ========================================================= */
+
 .why{
     background:var(--burgundy);
     color:white;
     padding:120px 5vw;
 }
+
 .why-title{
     font-size:clamp(50px,8vw,120px);
     line-height:.85;
     letter-spacing:-5px;
     margin-bottom:90px;
 }
+
 .why-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:60px;
 }
+
 .why-item{
     border-top:1px solid rgba(255,255,255,.4);
     padding-top:25px;
 }
+
 .number{
     font-size:13px;
     letter-spacing:2px;
     margin-bottom:30px;
     opacity:.7;
 }
+
 .why-item h3{
     font-size:28px;
     margin-bottom:18px;
 }
+
 .why-item p{
     color:#eee;
     line-height:1.7;
 }
+
 /* =========================================================
    TREATMENTS
 ========================================================= */
+
 .treatments{
     padding:130px 5vw;
 }
+
 .section-heading{
     display:flex;
     justify-content:space-between;
     align-items:flex-end;
     margin-bottom:60px;
 }
+
 .section-heading h2{
     font-family:"Playfair Display",serif;
     font-size:clamp(50px,7vw,100px);
     font-weight:500;
     line-height:.9;
 }
+
 .section-heading p{
     max-width:400px;
     line-height:1.6;
 }
+
 .treatment-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:20px;
 }
+
 /* =========================================================
    TREATMENT CARDS
 ========================================================= */
+
 .treatment{
     position:relative;
     min-height:650px;
@@ -297,9 +344,7 @@ nav{
     background:#222;
     color:white;
 }
-/*
-   THE ENTIRE PHOTO IS CLICKABLE
-*/
+
 .treatment-image-link{
     position:absolute;
     inset:0;
@@ -307,6 +352,7 @@ nav{
     z-index:1;
     cursor:pointer;
 }
+
 .treatment-image-link img{
     position:absolute;
     inset:0;
@@ -315,10 +361,11 @@ nav{
     object-fit:cover;
     transition:transform .6s ease;
 }
+
 .treatment:hover .treatment-image-link img{
     transform:scale(1.04);
 }
-/* dark overlay */
+
 .treatment::after{
     content:"";
     position:absolute;
@@ -332,7 +379,7 @@ nav{
             rgba(0,0,0,.92)
         );
 }
-/* card content */
+
 .treatment-content{
     position:absolute;
     z-index:4;
@@ -340,6 +387,7 @@ nav{
     right:40px;
     bottom:38px;
 }
+
 .treatment-tag{
     display:inline-block;
     border:1px solid rgba(255,255,255,.7);
@@ -349,20 +397,20 @@ nav{
     letter-spacing:2px;
     margin-bottom:18px;
 }
+
 .treatment h3{
     font-family:"Playfair Display",serif;
     font-size:55px;
     line-height:.95;
     margin-bottom:15px;
 }
+
 .treatment p{
     max-width:500px;
     line-height:1.6;
     color:#eee;
 }
-/*
-   EXPLORE BUTTON
-*/
+
 .treatment-link{
     display:inline-flex;
     align-items:center;
@@ -376,21 +424,26 @@ nav{
     z-index:5;
     transition:.25s ease;
 }
+
 .treatment-link:hover{
     gap:15px;
     color:#ffffff;
 }
+
 /* =========================================================
    MEDICAL MESSAGE
 ========================================================= */
+
 .medical-message{
     background:var(--green);
     color:white;
     padding:130px 5vw;
 }
+
 .medical-message-inner{
     max-width:1200px;
 }
+
 .medical-message h2{
     font-family:"Playfair Display",serif;
     font-size:clamp(50px,7vw,100px);
@@ -398,60 +451,73 @@ nav{
     font-weight:500;
     margin-bottom:40px;
 }
+
 .medical-message p{
     max-width:700px;
     font-size:20px;
     line-height:1.7;
     color:#e6e9e4;
 }
+
 /* =========================================================
    JOURNEY
 ========================================================= */
+
 .journey{
     padding:130px 5vw;
 }
+
 .journey-grid{
     display:grid;
     grid-template-columns:1fr 1.5fr;
     gap:100px;
 }
+
 .journey-intro h2{
     font-family:"Playfair Display",serif;
     font-size:75px;
     line-height:.95;
     font-weight:500;
 }
+
 .steps{
     display:grid;
     gap:0;
 }
+
 .step{
     display:grid;
     grid-template-columns:80px 1fr;
     border-top:1px solid #bbb;
     padding:28px 0;
 }
+
 .step-number{
     font-size:13px;
     font-weight:700;
     letter-spacing:2px;
 }
+
 .step h3{
     font-size:25px;
     margin-bottom:8px;
 }
+
 .step p{
     color:#555;
     line-height:1.6;
 }
+
 /* =========================================================
    STAYS
 ========================================================= */
+
 .stays{
     background:#111;
     color:white;
     padding:130px 5vw;
 }
+
 .stays-heading{
     display:flex;
     justify-content:space-between;
@@ -459,69 +525,84 @@ nav{
     align-items:flex-end;
     margin-bottom:60px;
 }
+
 .stays-heading h2{
     font-family:"Playfair Display",serif;
     font-size:clamp(55px,8vw,110px);
     line-height:.85;
     font-weight:500;
 }
+
 .stays-heading p{
     max-width:400px;
     line-height:1.6;
     color:#ccc;
 }
+
 .stay-grid{
     display:grid;
     grid-template-columns:1.4fr .8fr;
     gap:20px;
 }
+
 .stay-large,
 .stay-small{
     position:relative;
     overflow:hidden;
 }
+
 .stay-large{
     height:700px;
 }
+
 .stay-small{
     height:340px;
 }
+
 .stay-small + .stay-small{
     margin-top:20px;
 }
+
 .stay-large img,
 .stay-small img{
     width:100%;
     height:100%;
     transition:.5s;
 }
+
 .stay-large:hover img,
 .stay-small:hover img{
     transform:scale(1.04);
 }
+
 .stay-label{
     position:absolute;
     bottom:25px;
     left:25px;
     z-index:2;
 }
+
 .stay-label h3{
     font-size:27px;
     margin-bottom:6px;
 }
+
 .stay-label span{
     font-size:12px;
     text-transform:uppercase;
     letter-spacing:2px;
 }
+
 /* =========================================================
    KOSOVO
 ========================================================= */
+
 .kosovo{
     display:grid;
     grid-template-columns:1fr 1fr;
     min-height:700px;
 }
+
 .kosovo-image{
     background:
         linear-gradient(
@@ -532,6 +613,7 @@ nav{
     background-size:cover;
     background-position:center;
 }
+
 .kosovo-content{
     background:var(--orange);
     padding:90px 7vw;
@@ -539,6 +621,7 @@ nav{
     flex-direction:column;
     justify-content:center;
 }
+
 .kosovo-content h2{
     font-family:"Playfair Display",serif;
     font-size:clamp(55px,7vw,100px);
@@ -546,19 +629,23 @@ nav{
     font-weight:500;
     margin-bottom:35px;
 }
+
 .kosovo-content p{
     font-size:18px;
     line-height:1.7;
     max-width:550px;
 }
+
 /* =========================================================
    FINAL CTA
 ========================================================= */
+
 .final{
     background:var(--ivory);
     padding:150px 5vw;
     text-align:center;
 }
+
 .final h2{
     font-family:"Playfair Display",serif;
     font-size:clamp(65px,11vw,170px);
@@ -566,20 +653,41 @@ nav{
     letter-spacing:-7px;
     margin-bottom:60px;
 }
+
 .final p{
     max-width:600px;
     margin:0 auto 40px;
     font-size:18px;
     line-height:1.6;
 }
+
+.cta-button{
+    display:inline-block;
+    background:var(--orange);
+    color:white;
+    padding:20px 32px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    font-size:13px;
+    transition:.25s;
+}
+
+.cta-button:hover{
+    transform:translateY(-3px);
+    background:#ed6045;
+}
+
 /* =========================================================
    FOOTER
 ========================================================= */
+
 footer{
     background:var(--green-dark);
     color:white;
     padding:70px 5vw 40px;
 }
+
 .footer-top{
     display:flex;
     justify-content:space-between;
@@ -587,16 +695,19 @@ footer{
     gap:50px;
     padding-bottom:60px;
 }
+
 .footer-logo{
     font-size:60px;
     font-weight:700;
     letter-spacing:8px;
 }
+
 .footer-text{
     max-width:350px;
     line-height:1.6;
     color:#bfc8c2;
 }
+
 .footer-bottom{
     border-top:1px solid rgba(255,255,255,.2);
     padding-top:25px;
@@ -605,42 +716,55 @@ footer{
     color:#89968f;
     font-size:12px;
 }
+
 /* =========================================================
    TABLET
 ========================================================= */
+
 @media(max-width:900px){
+
     .nav-links{
         display:none;
     }
+
     .hero{
         min-height:850px;
     }
+
     .hero-logo{
         letter-spacing:-4px;
     }
+
     .intro-grid,
     .journey-grid,
     .kosovo{
         grid-template-columns:1fr;
     }
+
     .why-grid{
         grid-template-columns:1fr;
     }
+
     .treatment-grid{
         grid-template-columns:1fr;
     }
+
     .stay-grid{
         grid-template-columns:1fr;
     }
+
     .stay-large{
         height:550px;
     }
+
     .kosovo{
         min-height:auto;
     }
+
     .kosovo-image{
         min-height:500px;
     }
+
     .section-heading,
     .stays-heading,
     .footer-top{
@@ -648,22 +772,29 @@ footer{
         align-items:flex-start;
     }
 }
+
 /* =========================================================
    MOBILE
 ========================================================= */
+
 @media(max-width:600px){
+
     nav{
         padding:20px;
     }
+
     .nav-logo{
         font-size:22px;
     }
+
     .hero{
         padding:130px 25px 70px;
     }
+
     .hero-logo{
         font-size:85px;
     }
+
     .intro,
     .why,
     .treatments,
@@ -673,475 +804,860 @@ footer{
     .final{
         padding:85px 25px;
     }
+
     .treatment{
         min-height:520px;
     }
+
     .treatment-content{
         left:25px;
         right:25px;
     }
+
     .treatment h3{
         font-size:43px;
     }
+
     .stay-large{
         height:430px;
     }
+
     .stay-small{
         height:280px;
     }
+
     .footer-logo{
         font-size:45px;
     }
+
     .footer-bottom{
         flex-direction:column;
         gap:15px;
     }
 }
-/* WHAT TO EXPECT FEATURE */
-.expect-feature{background:#d94a2b;color:#fff;padding:78px 5vw;display:flex;align-items:center;justify-content:space-between;gap:40px;position:relative;overflow:hidden}
-.expect-feature:after{content:"NEXT";position:absolute;right:7vw;bottom:-55px;font-size:clamp(110px,19vw,260px);font-weight:700;letter-spacing:-12px;color:rgba(255,255,255,.09);pointer-events:none}
-.expect-feature-copy,.expect-feature-link{position:relative;z-index:1}
-.expect-feature .eyebrow{margin-bottom:16px}
-.expect-feature h2{font-size:clamp(46px,8vw,105px);line-height:.86;letter-spacing:-5px;max-width:850px}
-.expect-feature-link{flex:0 0 auto;border:1px solid rgba(255,255,255,.85);padding:19px 22px;text-transform:uppercase;font-size:12px;font-weight:700;letter-spacing:1.5px;transition:.25s}
-.expect-feature-link:hover{background:#fff;color:#d94a2b}
-@media(max-width:700px){.expect-feature{padding:65px 25px;align-items:flex-start;flex-direction:column}.expect-feature h2{letter-spacing:-2px}.expect-feature:after{right:0;bottom:-15px}}
-.intro h2,.section-heading h2,.journey-intro h2,.journey .step h3,.final h2{color:var(--burgundy)}
-/* BEYOND PREMIUM OFFERS */
-.offers-preview{position:relative;overflow:hidden;background:#d7193f;color:#fff;padding:64px 5vw}
-.offers-preview::after{content:"BEYOND";position:absolute;right:-2vw;top:50%;transform:translateY(-50%);font-size:clamp(100px,18vw,230px);line-height:.8;letter-spacing:-12px;font-weight:700;color:rgba(255,255,255,.09);pointer-events:none}
-.offers-inner{position:relative;z-index:1;max-width:1500px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:35px}
-.offers-preview h2{font-family:"Playfair Display",serif;font-size:clamp(42px,6.5vw,78px);font-weight:500;line-height:.92;letter-spacing:-2px;color:#fff}
-.offers-button{display:inline-block;background:var(--ivory);color:var(--burgundy);padding:21px 25px;font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;transition:.2s;white-space:nowrap;position:relative;z-index:1}
-.offers-button:hover{background:var(--green-dark);color:#fff;transform:translateY(-2px)}
-@media(max-width:1100px){nav{padding:24px 3vw;gap:18px}.nav-logo{font-size:23px;letter-spacing:5px}.nav-links{gap:13px;font-size:10px;letter-spacing:.75px}.nav-cta{padding:10px 12px}}
-@media(max-width:700px){.offers-preview{padding:55px 25px}.offers-inner{align-items:flex-start;flex-direction:column;gap:24px}.offers-preview h2{font-size:clamp(40px,11vw,60px);letter-spacing:-1px}.offers-preview::after{top:auto;bottom:15px;right:-20px;transform:none;font-size:105px}}
+
+/* =========================================================
+   WHAT TO EXPECT FEATURE
+========================================================= */
+
+.expect-feature{
+    background:#d94a2b;
+    color:#fff;
+    padding:78px 5vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    position:relative;
+    overflow:hidden;
+}
+
+.expect-feature:after{
+    content:"NEXT";
+    position:absolute;
+    right:7vw;
+    bottom:-55px;
+    font-size:clamp(110px,19vw,260px);
+    font-weight:700;
+    letter-spacing:-12px;
+    color:rgba(255,255,255,.09);
+    pointer-events:none;
+}
+
+.expect-feature-copy,
+.expect-feature-link{
+    position:relative;
+    z-index:1;
+}
+
+.expect-feature .eyebrow{
+    margin-bottom:16px;
+}
+
+.expect-feature h2{
+    font-size:clamp(46px,8vw,105px);
+    line-height:.86;
+    letter-spacing:-5px;
+    max-width:850px;
+}
+
+.expect-feature-link{
+    flex:0 0 auto;
+    border:1px solid rgba(255,255,255,.85);
+    padding:19px 22px;
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    transition:.25s;
+}
+
+.expect-feature-link:hover{
+    background:#fff;
+    color:#d94a2b;
+}
+
+@media(max-width:700px){
+
+    .expect-feature{
+        padding:65px 25px;
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .expect-feature h2{
+        letter-spacing:-2px;
+    }
+
+    .expect-feature:after{
+        right:0;
+        bottom:-15px;
+    }
+}
+
+.intro h2,
+.section-heading h2,
+.journey-intro h2,
+.journey .step h3,
+.final h2{
+    color:var(--burgundy);
+}
+
+/* =========================================================
+   BEYOND PREMIUM OFFERS
+========================================================= */
+
+.offers-preview{
+    position:relative;
+    overflow:hidden;
+    background:#d7193f;
+    color:#fff;
+    padding:64px 5vw;
+}
+
+.offers-preview::after{
+    content:"BEYOND";
+    position:absolute;
+    right:-2vw;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:clamp(100px,18vw,230px);
+    line-height:.8;
+    letter-spacing:-12px;
+    font-weight:700;
+    color:rgba(255,255,255,.09);
+    pointer-events:none;
+}
+
+.offers-inner{
+    position:relative;
+    z-index:1;
+    max-width:1500px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:35px;
+}
+
+.offers-preview h2{
+    font-family:"Playfair Display",serif;
+    font-size:clamp(42px,6.5vw,78px);
+    font-weight:500;
+    line-height:.92;
+    letter-spacing:-2px;
+    color:#fff;
+}
+
+.offers-button{
+    display:inline-block;
+    background:var(--ivory);
+    color:var(--burgundy);
+    padding:21px 25px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    transition:.2s;
+    white-space:nowrap;
+    position:relative;
+    z-index:1;
+}
+
+.offers-button:hover{
+    background:var(--green-dark);
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+@media(max-width:1100px){
+
+    nav{
+        padding:24px 3vw;
+        gap:18px;
+    }
+
+    .nav-logo{
+        font-size:23px;
+        letter-spacing:5px;
+    }
+
+    .nav-links{
+        gap:13px;
+        font-size:10px;
+        letter-spacing:.75px;
+    }
+
+    .nav-cta{
+        padding:10px 12px;
+    }
+}
+
+@media(max-width:700px){
+
+    .offers-preview{
+        padding:55px 25px;
+    }
+
+    .offers-inner{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:24px;
+    }
+
+    .offers-preview h2{
+        font-size:clamp(40px,11vw,60px);
+        letter-spacing:-1px;
+    }
+
+    .offers-preview::after{
+        top:auto;
+        bottom:15px;
+        right:-20px;
+        transform:none;
+        font-size:105px;
+    }
+}
+
 </style>
 </head>
+
 <body>
+
 <!-- =========================================================
      NAVIGATION
 ========================================================= -->
+
 <nav>
+
     <a href="index.html" class="nav-logo">
         BEYOND
     </a>
+
     <div class="nav-links">
+
         <a href="#treatments">
             Treatments
         </a>
+
         <a href="#offers">
             Offers
         </a>
+
         <a href="#journey">
             Your Journey
         </a>
+
         <a href="what-to-expect.html">
             What to Expect?
         </a>
+
         <a href="#stays">
             Stays
         </a>
+
         <a href="#kosovo">
             Kosovo
         </a>
-        <a href="#start" class="nav-cta">
+
+        <!-- CONNECTED TO OUTLOOK EMAIL -->
+        <a
+            href="mailto:beyond-healthcare@outlook.com"
+            class="nav-cta"
+        >
             Start Your Journey
         </a>
+
     </div>
+
 </nav>
+
 <!-- =========================================================
      HERO
 ========================================================= -->
+
 <section class="hero" id="top">
+
     <div class="hero-content">
+
         <div class="hero-logo">
             BEYOND
         </div>
+
         <div class="hero-line"></div>
+
         <h1>
             HEALTHCARE<br>
             WITHOUT BORDERS.
         </h1>
+
         <p>
             International access to selected medical care,
             coordinated from the first consultation to your
             return home.
         </p>
+
+        <!-- CONNECTED TO OUTLOOK EMAIL -->
         <a
-            href="#start"
+            href="mailto:beyond-healthcare@outlook.com"
             class="primary-button"
         >
             Start Your Journey Now
         </a>
+
     </div>
+
 </section>
-<!-- WHAT TO EXPECT FEATURE -->
-<section class="expect-feature" aria-labelledby="expect-title">
-  <div class="expect-feature-copy">
-    <div class="eyebrow">BEFORE YOU GO BEYOND</div>
-    <h2 id="expect-title">A BIG DECISION.<br>ONE CLEAR NEXT STEP.</h2>
-  </div>
-  <a class="expect-feature-link" href="what-to-expect.html">What to expect? <span aria-hidden="true">→</span></a>
+
+<!-- =========================================================
+     WHAT TO EXPECT FEATURE
+========================================================= -->
+
+<section
+    class="expect-feature"
+    aria-labelledby="expect-title"
+>
+
+    <div class="expect-feature-copy">
+
+        <div class="eyebrow">
+            BEFORE YOU GO BEYOND
+        </div>
+
+        <h2 id="expect-title">
+            A BIG DECISION.<br>
+            ONE CLEAR NEXT STEP.
+        </h2>
+
+    </div>
+
+    <a
+        class="expect-feature-link"
+        href="what-to-expect.html"
+    >
+        What to expect?
+        <span aria-hidden="true">→</span>
+    </a>
+
 </section>
+
 <!-- =========================================================
      INTRO
 ========================================================= -->
+
 <section class="intro">
+
     <div class="intro-grid">
+
         <div>
+
             <div class="eyebrow">
                 BEYOND / INTERNATIONAL HEALTHCARE
             </div>
+
             <h2>
                 Medical care.<br>
                 Clearly coordinated.
             </h2>
+
         </div>
+
         <div class="intro-copy">
+
             <p>
                 BEYOND connects international patients with
                 selected medical professionals and carefully
                 coordinated treatment pathways in Kosovo.
             </p>
+
             <br>
+
             <p>
                 From understanding your options to arranging
                 consultations, treatment, accommodation and
                 follow-up — one point of contact throughout
                 your journey.
             </p>
+
         </div>
+
     </div>
+
 </section>
+
 <!-- =========================================================
      WHY BEYOND
 ========================================================= -->
+
 <section class="why">
+
     <div class="eyebrow">
         WHY BEYOND
     </div>
+
     <h2 class="why-title">
         ONE JOURNEY.<br>
         ONE COORDINATOR.<br>
         NO GUESSWORK.
     </h2>
+
     <div class="why-grid">
+
         <div class="why-item">
+
             <div class="number">
                 01
             </div>
+
             <h3>
                 Selected Care
             </h3>
+
             <p>
                 Access carefully selected specialists
                 and treatment options based on your
                 individual needs.
             </p>
+
         </div>
+
         <div class="why-item">
+
             <div class="number">
                 02
             </div>
+
             <h3>
                 Clear Coordination
             </h3>
+
             <p>
                 Consultations, treatment planning,
                 logistics and communication handled
                 through one dedicated point of contact.
             </p>
+
         </div>
+
         <div class="why-item">
+
             <div class="number">
                 03
             </div>
+
             <h3>
                 International Access
             </h3>
+
             <p>
                 A streamlined healthcare journey for
                 patients travelling from Europe and beyond.
             </p>
+
         </div>
+
     </div>
+
 </section>
+
 <!-- =========================================================
      TREATMENTS
 ========================================================= -->
+
 <section
     class="treatments"
     id="treatments"
 >
+
     <div class="section-heading">
+
         <div>
+
             <div class="eyebrow">
                 TREATMENTS
             </div>
+
             <h2>
                 CARE<br>
                 THAT MOVES<br>
                 WITH YOU.
             </h2>
+
         </div>
+
         <p>
             Explore selected treatment categories available
             through the BEYOND network.
         </p>
+
     </div>
+
     <div class="treatment-grid">
-        <!-- =================================================
-             PLASTIC SURGERY
-        ================================================== -->
+
+        <!-- PLASTIC SURGERY -->
+
         <article class="treatment">
+
             <a
                 href="plastic-surgery.html"
                 class="treatment-image-link"
                 aria-label="Explore Plastic Surgery"
             >
+
                 <img
                     src="https://drevandrokoeche.com.br/assets/hero-surgery-DQkbDp8J.jpg"
                     alt="Plastic surgeon performing surgery"
                 >
+
             </a>
+
             <div class="treatment-content">
+
                 <div class="treatment-tag">
                     Surgical Care
                 </div>
+
                 <h3>
                     Plastic<br>
                     Surgery
                 </h3>
+
                 <p>
                     Selected surgical and reconstructive
                     procedures coordinated around your
                     individual treatment plan.
                 </p>
+
                 <a
                     class="treatment-link"
                     href="plastic-surgery.html"
                 >
                     Explore Plastic Surgery →
                 </a>
+
             </div>
+
         </article>
-        <!-- =================================================
-             AESTHETIC MEDICINE
-        ================================================== -->
+
+        <!-- AESTHETIC MEDICINE -->
+
         <article class="treatment">
+
             <a
                 href="BEYOND-Fillers-Aesthetic-Page-v2.html"
                 class="treatment-image-link"
                 aria-label="Explore Aesthetic Medicine"
             >
+
                 <img
                     src="https://images.pexels.com/photos/27666913/pexels-photo-27666913.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt="Aesthetic lip filler treatment"
                 >
+
             </a>
+
             <div class="treatment-content">
+
                 <div class="treatment-tag">
                     Aesthetic Medicine
                 </div>
+
                 <h3>
                     Lip<br>
                     Fillers
                 </h3>
+
                 <p>
                     Precision lip enhancement focused on
                     proportion, balance and natural-looking
                     results — from consultation to treatment.
                 </p>
+
                 <a
                     class="treatment-link"
                     href="BEYOND-Fillers-Aesthetic-Page-v2.html"
                 >
                     Explore Aesthetic Treatments →
                 </a>
+
             </div>
+
         </article>
-        <!-- =================================================
-             HAIR TRANSPLANT
-        ================================================== -->
+
+        <!-- HAIR TRANSPLANT -->
+
         <article class="treatment">
+
             <a
                 href="hair-transplant.html"
                 class="treatment-image-link"
                 aria-label="Explore Hair Transplant"
             >
+
                 <img
                     src="https://www.capilclinic.es/en/img/antes-despues/antonio-hervas.jpg"
                     alt="Balding man showing hair loss"
                 >
+
             </a>
+
             <div class="treatment-content">
+
                 <div class="treatment-tag">
                     Hair Restoration
                 </div>
+
                 <h3>
                     Hair<br>
                     Transplant
                 </h3>
+
                 <p>
                     Modern hair restoration pathways coordinated
                     from consultation and treatment planning
                     through your recovery.
                 </p>
+
                 <a
                     class="treatment-link"
                     href="hair-transplant.html"
                 >
                     Explore Hair Transplant →
                 </a>
+
             </div>
+
         </article>
-        <!-- =================================================
-             WEIGHT LOSS
-        ================================================== -->
+
+        <!-- WEIGHT LOSS -->
+
         <article class="treatment">
+
             <a
                 href="weight-loss.html"
                 class="treatment-image-link"
                 aria-label="Explore Weight Loss"
             >
+
                 <img
                     src="https://ultrahealthmed.com/img/Weight.jpg"
                     alt="Person measuring waist for weight management"
                 >
+
             </a>
+
             <div class="treatment-content">
+
                 <div class="treatment-tag">
                     Bariatric Care
                 </div>
+
                 <h3>
                     Weight<br>
                     Loss
                 </h3>
+
                 <p>
                     Structured weight-loss pathways for
                     patients considering bariatric surgery,
                     including gastric sleeve treatment.
                 </p>
+
                 <a
                     class="treatment-link"
                     href="weight-loss.html"
                 >
                     Explore Weight Loss →
                 </a>
+
             </div>
+
         </article>
-        <!-- =================================================
-             DENTISTRY
-        ================================================== -->
+
+        <!-- DENTISTRY -->
+
         <article class="treatment">
+
             <a
                 href="dentistry.html"
                 class="treatment-image-link"
                 aria-label="Explore Dentistry"
             >
+
                 <img
                     src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=90"
                     alt="Modern dental care"
                 >
+
             </a>
+
             <div class="treatment-content">
+
                 <div class="treatment-tag">
                     Dental Care
                 </div>
+
                 <h3>
                     Dentistry
                 </h3>
+
                 <p>
                     Selected dental treatments coordinated
                     around your needs, schedule and complete
                     international patient journey.
                 </p>
+
                 <a
                     class="treatment-link"
                     href="dentistry.html"
                 >
                     Explore Dentistry →
                 </a>
+
             </div>
+
         </article>
-        <!-- =================================================
-             ORTHOPEDICS
-        ================================================== -->
+
+        <!-- ORTHOPEDICS -->
+
         <article class="treatment">
+
             <a
                 href="orthopedics.html"
                 class="treatment-image-link"
                 aria-label="Explore Orthopedics"
             >
+
                 <img
                     src="https://thehospitalgroup.org/assets/Orthopaedics/Hip/Hip-Replacement-illustration.jpg"
                     alt="Hip replacement prosthesis"
                 >
+
             </a>
+
             <div class="treatment-content">
+
                 <div class="treatment-tag">
                     Orthopedic Care
                 </div>
+
                 <h3>
                     Orthopedics
                 </h3>
+
                 <p>
                     Hip prosthesis, joint replacement and
                     selected orthopedic procedures coordinated
                     around your treatment needs.
                 </p>
+
                 <a
                     class="treatment-link"
                     href="orthopedics.html"
                 >
                     Explore Orthopedics →
                 </a>
+
             </div>
+
         </article>
+
     </div>
+
 </section>
+
 <!-- =========================================================
      MEDICAL MESSAGE
 ========================================================= -->
+
 <section class="medical-message">
+
     <div class="medical-message-inner">
+
         <div class="eyebrow">
             THE BEYOND STANDARD
         </div>
+
         <h2>
             SERIOUS ABOUT<br>
             YOUR CARE.
         </h2>
+
         <p>
             BEYOND is built around a simple principle:
             international healthcare should be easier to
             understand, easier to access and professionally
             coordinated from beginning to end.
         </p>
+
     </div>
+
 </section>
+
 <!-- =========================================================
      BEYOND PREMIUM OFFERS
 ========================================================= -->
-<section class="offers-preview" id="offers" aria-labelledby="offers-title">
+
+<section
+    class="offers-preview"
+    id="offers"
+    aria-labelledby="offers-title"
+>
+
     <div class="offers-inner">
-        <h2 id="offers-title">Available BEYOND Offers</h2>
-        <a class="offers-button" href="offers.html">Explore available offers now →</a>
+
+        <h2 id="offers-title">
+            Available BEYOND Offers
+        </h2>
+
+        <a
+            class="offers-button"
+            href="offers.html"
+        >
+            Explore available offers now →
+        </a>
+
     </div>
+
 </section>
+
 <!-- =========================================================
      JOURNEY
 ========================================================= -->
+
 <section
     class="journey"
     id="journey"
 >
+
     <div class="journey-grid">
+
         <div class="journey-intro">
+
             <div class="eyebrow">
                 YOUR JOURNEY
             </div>
+
             <h2>
                 FROM<br>
                 FIRST<br>
@@ -1149,236 +1665,347 @@ footer{
                 TO<br>
                 NEXT CHAPTER.
             </h2>
+
         </div>
+
         <div class="steps">
+
             <div class="step">
+
                 <div class="step-number">
                     01
                 </div>
+
                 <div>
+
                     <h3>
                         Tell Us What You Need
                     </h3>
+
                     <p>
                         Share your treatment goals,
                         questions and preferred timeframe.
                     </p>
+
                 </div>
+
             </div>
+
             <div class="step">
+
                 <div class="step-number">
                     02
                 </div>
+
                 <div>
+
                     <h3>
                         Explore Your Options
                     </h3>
+
                     <p>
                         We help you understand suitable
                         treatment pathways and available
                         specialists.
                     </p>
+
                 </div>
+
             </div>
+
             <div class="step">
+
                 <div class="step-number">
                     03
                 </div>
+
                 <div>
+
                     <h3>
                         Plan Your Treatment
                     </h3>
+
                     <p>
                         Consultation, treatment scheduling
                         and practical arrangements are
                         coordinated in advance.
                     </p>
+
                 </div>
+
             </div>
+
             <div class="step">
+
                 <div class="step-number">
                     04
                 </div>
+
                 <div>
+
                     <h3>
                         Arrive in Kosovo
                     </h3>
+
                     <p>
                         Your stay, transfers and key logistics
                         can be arranged around your treatment.
                     </p>
+
                 </div>
+
             </div>
+
             <div class="step">
+
                 <div class="step-number">
                     05
                 </div>
+
                 <div>
+
                     <h3>
                         Focus on Recovery
                     </h3>
+
                     <p>
                         Your BEYOND coordinator remains your
                         point of contact throughout the journey.
                     </p>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
+
 <!-- =========================================================
      STAYS
 ========================================================= -->
+
 <section
     class="stays"
     id="stays"
 >
+
     <div class="stays-heading">
+
         <div>
+
             <div class="eyebrow">
                 YOUR STAY
             </div>
+
             <h2>
                 SELECTED<br>
                 STAYS IN<br>
                 PRISHTINA.
             </h2>
+
         </div>
+
         <p>
             Comfortable, contemporary apartments selected
             for international patients who want privacy,
             convenience and a higher standard of stay.
         </p>
+
     </div>
+
     <div class="stay-grid">
+
         <div class="stay-large">
+
             <img
                 src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=90"
                 alt="Premium apartment interior"
             >
+
             <div class="stay-label">
+
                 <h3>
                     Premium Apartment
                 </h3>
+
                 <span>
                     Prishtina
                 </span>
+
             </div>
+
         </div>
+
         <div>
+
             <div class="stay-small">
+
                 <img
                     src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=90"
                     alt="Luxury apartment bedroom"
                 >
+
                 <div class="stay-label">
+
                     <h3>
                         Private & Comfortable
                     </h3>
+
                     <span>
                         Selected stays
                     </span>
+
                 </div>
+
             </div>
+
             <div class="stay-small">
+
                 <img
                     src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=90"
                     alt="Modern luxury apartment"
                 >
+
                 <div class="stay-label">
+
                     <h3>
                         Modern Living
                     </h3>
+
                     <span>
                         Prishtina
                     </span>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
+
 <!-- =========================================================
      KOSOVO
 ========================================================= -->
+
 <section
     class="kosovo"
     id="kosovo"
 >
+
     <div class="kosovo-image"></div>
+
     <div class="kosovo-content">
+
         <div class="eyebrow">
             YOUR DESTINATION
         </div>
+
         <h2>
             WHY<br>
             KOSOVO?
         </h2>
+
         <p>
             Kosovo offers an increasingly accessible destination
             for international patients looking for selected medical
             care at competitive pricing.
         </p>
+
         <br>
+
         <p>
             Prishtina combines international connectivity,
             modern private healthcare, hospitality and a compact
             city environment — making the practical side of
             an international treatment journey easier to manage.
         </p>
+
     </div>
+
 </section>
+
 <!-- =========================================================
      FINAL CTA
 ========================================================= -->
+
 <section
     class="final"
     id="start"
 >
+
     <div class="eyebrow">
         BEGIN WITH BEYOND
     </div>
+
     <h2>
         YOUR HEALTH.<br>
         YOUR DECISION.
     </h2>
+
     <p>
         Tell us what you are considering.
         We will help you understand the next step.
     </p>
+
+    <!-- FIXED + CONNECTED TO OUTLOOK EMAIL -->
     <a
-        href="mailto:hello@beyondhealthcare.com"
-        class="primary-button"
+        href="mailto:beyond-healthcare@outlook.com"
+        class="cta-button"
     >
         Start Your Journey Now
     </a>
+
 </section>
+
 <!-- =========================================================
      FOOTER
 ========================================================= -->
+
 <footer>
+
     <div class="footer-top">
+
         <div class="footer-logo">
             BEYOND
         </div>
+
         <div class="footer-text">
+
             Healthcare without borders.
+
             <br><br>
+
             International healthcare coordination
             connecting patients with selected care
             in Kosovo.
+
         </div>
+
     </div>
+
     <div class="footer-bottom">
+
         <div>
             © 2026 BEYOND
         </div>
+
         <div>
             Prishtina · Kosovo
         </div>
+
         <div>
             Healthcare Without Borders
         </div>
+
     </div>
+
 </footer>
+
 </body>
 </html>
